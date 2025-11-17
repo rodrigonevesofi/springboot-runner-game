@@ -14,7 +14,7 @@ Na pasta do projeto:
 mvn spring-boot:run
 ```
 
-O app ficará disponível em `http://localhost:8080/`.
+O game ficará disponível em `http://localhost:8080/`.
 
 ## O que contém
 - Backend Spring Boot (endpoints REST para salvar scores em H2)
@@ -22,10 +22,11 @@ O app ficará disponível em `http://localhost:8080/`.
   - POST /api/scores  (JSON `{ "player": "Nome", "score": 123 }`)
 - Frontend simples em `src/main/resources/static`:
   - index.html
+  - game.html
+  - signup.html
+  - menu.html
+  - auth.js
   - app.js
   - styles.css
-  - superman.png (sprite - imagem enviada pelo usuário usada como personagem)
 
-## Observações
-- Projeto de exemplo para fins educativos. O jogo é simples: toque no canvas ou pressione espaço para pular.
-- Você pode melhorar: adicionar sprites, animação, sons, mobile controls, fases, etc.
+
