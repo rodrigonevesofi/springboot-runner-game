@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Login - Runner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-login">
+  <div class="center-card">
+    <h1 class="title">RUNNER GAME</h1>
+
+    <form id="loginForm" class="form-card" onsubmit="return false;">
+      <label>Usuário</label>
+      <input id="loginUser" type="text" required autocomplete="username">
+
+      <label>Senha</label>
+      <input id="loginPass" type="password" required autocomplete="current-password">
+
+      <button id="btnLogin" class="btn">Entrar</button>
+
+      <div class="row small">
+        <a href="signup.html">Criar conta</a> |
+        <a href="#" id="forgotLink">Esqueceu a senha?</a>
+      </div>
+    </form>
+
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

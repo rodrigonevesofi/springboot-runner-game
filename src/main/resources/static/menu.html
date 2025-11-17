@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Menu - Runner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-menu">
+  <div class="menu-wrap">
+    <h1 class="title">RUNNER GAME</h1>
+    <h3 class="subtitle">Escolha suas opções e comece a jogar!</h3>
+
+    <div class="card">
+      <div><strong>Usuário:</strong> <span id="menuUser"></span></div>
+
+      <div class="section">
+        <label>Escolha o cenário</label>
+        <select id="bgSelect">
+          <option value="city">Cidade (pixel)</option>
+          <option value="city">Mapa 1</option>
+            <option value="city">Mapa 2</option>
+            <option value="city">Mapa 3</option>     
+            <option value="city">Mapa 4</option>
+            <option value="city">Dark</option>
+            <option value="city">Dark 2</option>
+        </select>
+      </div>
+
+
+      <div class="section">
+        <label>Escolha personagem</label>
+        <select id="charSelect">
+          <option value="default">Rodrigo</option>
+            <option value="default">Anderson</option>
+            <option value="default">Mateus</option>
+            <option value="default">Vitor (Profº)</option>
+            <option value="default">Ricardão</option>
+            <option value="superman">Superman</option>
+          <!-- adicione mais opções caso tenha sprites diferentes -->
+        </select>
+      </div>
+
+      <h6>O personagem Rodrigo tem 42 de bíceps!!!</h6>
+
+      <h5>Configurações de áudio</h5>
+      <div class="section row">
+        <label for="bgmVolume">Música de fundo</label>
+        <input id="bgmVolume" type="range" min="0" max="1" step="0.01" value="0.5">
+      </div>
+
+      <div class="section row">
+        <label for="sfxVolume">Efeitos sonoros</label>
+        <input id="sfxVolume" type="range" min="0" max="1" step="0.01" value="0.5">
+      </div>
+
+      <div class="row">
+        <button id="btnStart" class="btn">Iniciar Jogo</button>
+        <button id="btnLogout" class="btn ghost">Sair</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

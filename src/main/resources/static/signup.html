@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Cadastro - Runner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-login">
+  <div class="center-card">
+    <h1 class="title">CADASTRO</h1>
+
+    <form id="signupForm" class="form-card" onsubmit="return false;">
+      
+      <label>Usuário</label>
+      <input id="suUser" type="text" required>
+
+      <label>Senha</label>
+      <input id="suPass" type="password" required>
+
+      <label>Idade (número)</label>
+      <input id="suAge" type="number" min="1" required>
+
+      <label>CPF</label>
+      <input id="suCpf" type="text" maxlength="11" placeholder="Somente números">
+
+      <script>
+        document.getElementById('suCpf').addEventListener('input', function () {
+            this.value = this.value.replace(/\D/g, '');
+        });
+      </script>
+
+      <label>Cartão de Crédito</label>
+      <input id="suCard" type="text" maxlength="16" placeholder="Somente números">
+
+      <script>
+        document.getElementById('suCard').addEventListener('input', function () {
+            this.value = this.value.replace(/\D/g, '');
+        });
+      </script>
+
+      <button id="btnSignup" class="btn">Criar conta</button>
+
+      <div class="row small">
+        <a href="index.html">Voltar ao login</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

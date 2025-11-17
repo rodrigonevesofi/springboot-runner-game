@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Game - Runner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-game">
+  <div id="hud">
+    <div id="hud-left">
+      <div id="score">Score: 0</div>
+      <div id="record">Recorde: 0</div>
+    </div>
+    <div id="hud-right">
+      <button id="btnPause" class="btn small">Pausar</button>
+      <button id="btnBack" class="btn small">Menu</button>
+    </div>
+  </div>
+
+  <canvas id="game" tabindex="0"></canvas>
+
+  <audio id="bgm" loop src="sounds/sorriso.mp3"></audio>
+  <audio id="sfx-jump" src="sounds/jump.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

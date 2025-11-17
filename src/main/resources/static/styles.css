@@ -1,0 +1,63 @@
+:root{
+  --bg-dark: #05070a;
+  --panel:#121318;
+  --accent: #ffda09;
+  --white: #fff;
+}
+
+*{box-sizing:border-box;font-family: 'Press Start 2P', monospace;}
+
+body {
+  margin:0;
+  background:#000;
+  color:var(--white);
+}
+
+/* LOGIN / SIGNUP backgrounds */
+.bg-login {
+  background-image: url('img/back0.jpeg');
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.center-card {
+  background: rgba(0,0,0,0.6);
+  padding:28px;
+  border-radius:6px;
+  max-width:420px;
+  width:90%;
+  text-align:center;
+}
+
+.title { font-size:25px; margin-bottom:10px; color:var(--accent); }
+
+.form-card label { display:block; text-align:left; margin:10px 0 6px; font-size:10px; }
+.form-card input {
+  width:100%; padding:10px; border-radius:6px; border:2px solid rgb(59, 59, 19); background: rgba(17, 17, 17, 0.767); color:#fff;
+}
+.btn { margin-top:14px; padding:10px 14px; background:var(--accent); color:#000; border:none; cursor:pointer; border-radius:6px; font-size:12px; }
+.btn.ghost { background:transparent; border:2px solid #444; color:#fff; }
+.small{ font-size:10px; opacity:0.9; }
+.row { display:flex; gap:8px; justify-content:center; align-items:center; margin-top:8px; }
+
+/* MENU */
+.bg-menu {
+  background-image: url('img/background_city.png');
+  background-size:cover;
+  background-position:center;
+}
+.menu-wrap { padding:30px; }
+.card { background: rgba(0,0,0,0.6); padding:18px; width:380px; border-radius:8px; color:#fff; }
+
+/* HUD & Canvas */
+#hud { position:fixed; top:10px; left:10px; right:10px; display:flex; justify-content:space-between; z-index:1000; }
+#score,#record { font-size:14px; background:rgba(0,0,0,0.5); padding:8px 12px; border-radius:px; }
+canvas#game { display:block; width:100vw; height:100vh; }
+
+/* small util */
+.section { margin-top:12px; text-align:left; }
+.footer { opacity:0.7; margin-top:12px; font-size:10px; }
